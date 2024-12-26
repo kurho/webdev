@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayView - Login & Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Welcome Back!</h1>
+            <p>Efficient and Reliable Payroll Management</p>
+        </div>
+        <!-- Login -->
+        <div class="form-section active" id="login">
+            <h2>Login</h2>
+            <p>Welcome back! Please login to your account.</p>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="login-email">User Name</label>
+                    <input type="email" id="login-email" name="email" placeholder="username@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="switch">
+                    <p>New User? <a href="javascript:void(0);" onclick="toggleForm('signup')">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- Signup -->
+        <div class="form-section" id="signup">
+            <h2>Sign Up</h2>
+            <p>Create a new account to manage your payroll efficiently.</p>
+            <form action="/signup" method="POST">
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" placeholder="yourname@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" name="password" placeholder="********" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" name="confirm_password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="switch">
+                    <p>Already have an account? <a href="javascript:void(0);" onclick="toggleForm('login')">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

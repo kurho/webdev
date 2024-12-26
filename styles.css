@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;/* BACKGROUND NOT SURE ANO ILALAGAY */
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.welcome-section {
+    flex: 1;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: none; 
+}
+
+.form-section.active {
+    display: block; 
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #6a11cb;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #2575fc;
+}
+
+.switch {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.switch a {
+    color: #6a11cb;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
